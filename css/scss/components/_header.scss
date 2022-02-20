@@ -1,0 +1,52 @@
+@import '../mixins//header-mixin';
+$border-color: #38a9c5;
+
+h1 {
+  color: #44aec9;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+
+  .top-line {
+    //left side
+    &:before {
+      @include header($border-color, 1px, 40%, 15px, unset, 0, unset);
+
+      @media screen and (max-width: 767px) {
+        & {
+          @include header($border-color, 1px, 28%, 15px, unset, 0, unset);
+        }
+      }
+    }
+    // right side
+
+    &:after {
+      @include header($border-color, 1px, 40%, 15px, unset, unset, 0);
+
+      @media screen and (max-width: 767px) {
+        & {
+          @include header($border-color, 1px, 28%, 15px, unset, unset, 0);
+        }
+      }
+    }
+  }
+
+  .edge-line {
+    //left side
+    &:before {
+      @include header($border-color, 60px, 1px, 15px, unset, 0, unset);
+    }
+    // right side
+    &:after {
+      @include header($border-color, 60px, 1px, 15px, unset, unset, 0);
+    }
+  }
+
+  .bottom-line:before {
+    @include header($border-color, 1px, 18%, unset, -37.5px, 0, unset);
+  }
+  .bottom-line:after {
+    @include header($border-color, 1px, 18%, unset, -37.5px, unset, 0);
+  }
+}

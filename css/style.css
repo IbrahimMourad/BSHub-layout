@@ -1,0 +1,136 @@
+h1 {
+  color: #44aec9;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+h1 .top-line:before {
+  background-color: #38a9c5;
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 40%;
+  top: 15px;
+  bottom: unset;
+  left: 0;
+  right: unset;
+}
+
+@media screen and (max-width: 767px) {
+  h1 .top-line:before {
+    background-color: #38a9c5;
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 28%;
+    top: 15px;
+    bottom: unset;
+    left: 0;
+    right: unset;
+  }
+}
+
+h1 .top-line:after {
+  background-color: #38a9c5;
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 40%;
+  top: 15px;
+  bottom: unset;
+  left: unset;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  h1 .top-line:after {
+    background-color: #38a9c5;
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 28%;
+    top: 15px;
+    bottom: unset;
+    left: unset;
+    right: 0;
+  }
+}
+
+h1 .edge-line:before {
+  background-color: #38a9c5;
+  position: absolute;
+  content: '';
+  height: 60px;
+  width: 1px;
+  top: 15px;
+  bottom: unset;
+  left: 0;
+  right: unset;
+}
+
+h1 .edge-line:after {
+  background-color: #38a9c5;
+  position: absolute;
+  content: '';
+  height: 60px;
+  width: 1px;
+  top: 15px;
+  bottom: unset;
+  left: unset;
+  right: 0;
+}
+
+h1 .bottom-line:before {
+  background-color: #38a9c5;
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 18%;
+  top: unset;
+  bottom: -37.5px;
+  left: 0;
+  right: unset;
+}
+
+h1 .bottom-line:after {
+  background-color: #38a9c5;
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 18%;
+  top: unset;
+  bottom: -37.5px;
+  left: unset;
+  right: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+}
+
+.text {
+  text-align: center;
+  width: 60%;
+  padding: 0.75rem;
+  margin: 0.5rem auto;
+  color: #737373;
+}
+/*# sourceMappingURL=style.css.map */

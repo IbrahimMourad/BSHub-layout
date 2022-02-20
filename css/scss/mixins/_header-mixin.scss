@@ -1,0 +1,11 @@
+@mixin header($bg, $height, $width, $top, $bottom, $left, $right) {
+  background-color: $bg;
+  position: absolute;
+  content: '';
+  height: $height;
+  width: $width;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+}
